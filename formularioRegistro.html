@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursos Photocad</title>
+    <link href="css/formularioRegistro.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="inicioMenu">
+            <!--Botones de la barra de inicio-->
+            <a href="../index.html"><div class="inicioBoton"><div id="inicioLetra">I</div>NICIO</div></a>
+            <a href="cursosIndex.html"><div class="inicioBoton" id="cursos"><div id="inicioLetra">C</div>URSOS</div></a>
+            <a href="formularioRegistro.html"><div class="inicioBoton"><div id="inicioLetra">R</div>EGISTRO</div></a>
+            <FORM method=post>
+                <a href="admin.html"><div class="inicioBotonLogin"><div id="inicioLetra">L</div>OGIN</div></a>
+                <div id="inicioLogin">
+                    Usuario <INPUT type=text name="usuario2" size=6>
+                    Password <INPUT type=text name="password2" size=6>   
+                </div>
+            </FORM>
+        </div>
+        <div class="contenido">
+            <div class="formulario">
+                <FORM action="registro.php" method="post">
+                <TABLE border=0> 
+                <TR>
+                    <TD>Nombre</TD>
+                    <TD><INPUT type=text name="nombre" size="5"></TD>
+                    <TD align="right">&nbsp &nbsp &nbsp &nbsp Genero</TD>  
+                    <TD align="right"> H <INPUT type=radio name="genero" value="M">M <INPUT type=radio name="genero" value="F"></TD>  
+                    <TD width="35px"></TD>
+                    <TD>Usuario</TD>
+                    <TD><INPUT type=text name="usuario" size="10"></TD>
+                    <TD align="right" >Comentarios: &nbsp</TD>
+                    <td rowspan="2" ><textarea name="textarea" rows="4" cols="38"></textarea></td>
+                </TR>     
+                <TR>
+                    <TD height=37>Apellidos</TD>
+                    <TD align="right"  colspan=3><INPUT type=text name="apellido" size=36></TD>
+                    <TD></TD>
+                    <TD>Password</TD>
+                    <TD><INPUT type=password name="password" size="10"></TD>
+                </TR>
+                <TR>
+                    <TD height=37>E-Mail</TD>
+                    <TD align="right"  colspan=3>
+                    <INPUT type=text name="mail" size=36>
+                    </TD>
+                        <td></td>
+                   <TD rowspan=2>Intereses</TD>
+                    <TD rowspan=2>
+                        <input type="checkbox" name="option1" value="Milk"> Arquitectura<br> 
+                        <input type="checkbox" name="option3" value="Cheese"> Restauracion<br>
+                        <input type="checkbox" name="option2" value="Butter" > Informatica 
+                    </TD>
+                    <TD rowspan=2>
+                        <input type="checkbox" name="option2" value="Butter" > Dise&ntildeo<br>
+                        <input type="checkbox" name="option1" value="Milk"> Fotogrametria<br>
+                        <input type="checkbox" name="option3" value="Cheese"> Fotografia    
+                    </td>
+                    <td  rowspan=2 id="formularioBotones">
+                        <div id="boton">Borrar</div>
+                        <input type="submit" value="Enviar">
+                    </td>
+                </TR>
+                <TR>
+                    <TD height=37>Edad</TD>
+                    <TD>
+                        <INPUT type=text name="edad" size="1">
+                    </TD>
+                        <td  align="right">Estudios</td>
+                    <TD align="right"> 
+                    <SELECT name="ocupación"  >
+                        <OPTION VALUE="profesor">E.S.O.</OPTION>
+                        <OPTION VALUE="estudiante">F.P.</OPTION>
+                        <OPTION VALUE="ingeniero">Grado</OPTION>
+                        <OPTION VALUE="jubilado">Master</OPTION>
+                        <OPTION VALUE="otro">Otro</OPTION>
+                    </SELECT>
+                    </TD> 
+                </TR>
+                </TABLE>
+                </FORM>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

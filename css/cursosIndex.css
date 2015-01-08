@@ -1,0 +1,205 @@
+body {
+    font: 100%/1.4 sans-serif;
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        color-stop(0%,rgba(240, 238, 238,1)), 
+        color-stop(50%,rgba(227, 225, 225,0.5)),  
+        color-stop(100%,rgba(0,0,0,0))), 
+        url('../imagenes/fondoEscherMini.jpg');
+    
+    background: linear-gradient(to top, rgba(227, 225, 225,0.3), rgba(240, 238, 238,1)), url('../imagenes/fondoEscherMini.jpg');
+}
+
+a:link, a:visited, a:hover, a:active{
+ color: black;   
+}
+
+.contenedor {
+    height: 1100px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+}
+
+.inicioMenu {
+    height: 30px;
+    background-color: #e3e2e2;
+}
+.inicioBoton{
+    float: left;
+    height: 20px;
+    width: 100px;
+    margin-top: 5px;
+    margin-right: 100px;
+    cursor: crosshair;
+}
+.inicioBotonLogin{
+    float: left;
+    height: 20px;
+    width: 80px;
+    margin-top: 5px;
+    cursor: crosshair;
+}
+.inicioBoton:hover{
+    cursor: crosshair;
+    color: white;
+    background-color: #748079;
+}
+.inicioBotonLogin:hover{
+    cursor: crosshair;
+    color: white;
+    background-color: #748079;
+}
+
+#inicioLetra{
+    float: left;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: white;
+    background-color: #748079;
+}
+#inicioLogin{
+    float: left;
+    margin-top: 5px;
+    height: 20px;
+    width: 320px;
+    text-align: center;
+}
+.categoriaMenu {
+    height: 50px;
+    margin-top: 5px;
+}
+#categoriaBotones {
+    float: left;
+    height: 50px;
+    width: 201px;
+}
+
+.categoriaBoton{
+    float: left;
+    height: 45px;
+    width: 46px;
+    background-color: #e3e2e2;
+    margin-right: 4px;
+    cursor: crosshair;
+}
+.categoriaBoton img{
+    height: 100%;
+    width: 100%;
+}
+
+.categoriaBoton img:hover {
+      -webkit-box-shadow: 0px 0px 0px #111;
+          box-shadow: 0px 0px 5px #111;
+    opacity: 0;
+}
+#categoriaDescripcion{
+    float: left;
+    height: 43px;
+    width: 791px;
+    background-color: #e3e2e2;
+    padding-left: 5px;
+    font-family: sans-serif, arial;
+    padding-top: 2px;
+}
+
+.contenido {
+   // border: solid;
+    height: 800px;
+    margin-top: 2px;
+}
+.contenidoCurso{
+    float:left;
+    height: 325px;
+    width: 195px;
+    background-color: #d9a3a3;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-top: 5px;
+}
+
+.contenidoCurso img{
+    width: 100%;
+    height:100%;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	//perspective: 1000;
+    float: left;
+    margin-top: 5px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    cursor: crosshair;
+
+}
+	/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back,.flip-container img {
+    width: 195px;
+    height: 325px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+    text-align: justify;
+    font-size: 14px; 
+    color: #ebebeb;
+}
+
+#infoModelado{
+    background-color: #629368;
+    height: 295px;
+    padding: 15px;
+}
+#infoFoto{
+    background-color: #4c4ced;
+    height: 295px;
+    padding: 15px;
+}
+#infoProgramacion{
+    background-color: #ef5353;
+    height: 295px;
+    padding: 15px;
+}
+
+#infoOrigami{
+    background-color: #898991;
+    height: 295px;
+    padding: 15px;
+}
+
+ol li{
+    margin-left: -10px;
+    margin-top: 10px;
+    color: #dbdbdb;
+}
